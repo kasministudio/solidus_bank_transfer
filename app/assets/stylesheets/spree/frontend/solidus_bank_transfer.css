@@ -1,0 +1,26 @@
+/*
+ *= require jquery-ui
+ *= require jquery-ui/datepicker
+*/
+.ui-datepicker {
+  width: 18em; /* fix calendar width */
+  padding: .2em .2em 0;
+}
+
+.bt_payment_form table {
+  border-collapse: inherit;
+}
+
+.bt_payment_form [type="submit"] {
+  margin-left: 10px;
+}
+
+.bt_payment_form input[type="text"],
+.bt_payment_form input[type="date"] {
+  width: 138px;
+  margin-top: 5px;
+}
+
+.hidden {
+  display: none;
+}

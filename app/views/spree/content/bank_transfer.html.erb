@@ -1,0 +1,34 @@
+<h4><%= Spree.t(:title, scope: :bank_transfer_instructions) %></h4>
+<b><%= Spree.t(:steps, scope: :bank_transfer_instructions) %></b>
+<ol>
+  <li><%= Spree.t(:first_step, scope: :bank_transfer_instructions) %>
+    <% if (banks = Spree::Bank.active).any? %>
+      <div style="padding:20px 0">
+        <table border="1" align='center' width="80%">
+          <tr>
+            <th><%= Spree.t(:bank_name) %></th>
+            <th><%= Spree.t(:account_no) %></th>
+            <th><%= Spree.t(:additional_details) %></th>
+          </tr>
+          <% banks.each do |bank| %>
+            <tr>
+              <td><center><%= bank.name %></center></td>
+              <td><center><%= bank.account_no %></center></td>
+              <td><center><%= bank.additional_details %></center></td>
+            </tr>
+          <% end %>
+        </table>
+      </div>
+    <% end %>
+  </li>
+  <li><%= Spree.t(:second_step, scope: :bank_transfer_instructions) %>
+    <ol style="padding:10px 0 0 20px" type='a'>
+      <li><%= Spree.t(:third_step, scope: :bank_transfer_instructions) %></li>
+      <li><%= Spree.t(:fourth_step, scope: :bank_transfer_instructions) %></li>
+      <li><%= Spree.t(:fifth_step, scope: :bank_transfer_instructions) %></li>
+      <li><%= Spree.t(:sixth_step, scope: :bank_transfer_instructions) %></li>
+      <br><br>
+      <%= image_tag 'payment_details.png' %>
+    </ol>
+  </li>
+</ol>

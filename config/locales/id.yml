@@ -1,0 +1,35 @@
+id:
+  spree:
+    account_no: Nomer Rekening
+    add_details: Konfirmasi Pembayaran
+    additional_details: Additional Details
+    back_to_banks_list: Kembali ke Daftar Bank
+    banks: Banks
+    bank_name: Nama Bank
+    concept: Nomer Order
+    confirm_details_submit: Are you sure you want to Submit these details? You will not be able to Edit these details once Submitted. Press 'OK' to confirm.
+    deactivate: Deactivate
+    deposited_on: Tanggal Transfer
+    how_bank_transfer_works: Bagaimana Cara Konfirmasi Pembayaran?
+    bank_transfer_instructions:
+      title: Bagaimana Cara Konfirmasi Pembayaran
+      steps: "Steps:"
+      first_step: Deposit order total in one of the below mentioned bank accounts. After this payment a payment reference number will be provided by the bank.
+      second_step: "Enter this payment reference number on Order Details page by following steps:"
+      third_step: Go to "My Account" page.
+      fourth_step: Select Order for which you want to provide details.
+      fifth_step: Click on "Konfirmasi Pembayaran" link visible in "Payment Information" column.
+      sixth_step: Provide payment details and Submit.
+    listing_banks: Daftar Bank
+    new_bank: Bank baru
+    only_show_orders_with_bank_transfer_payment_reference_number: Only show orders with bank transfer payment reference number
+    payment_not_found: Pembayaran tidak ditemukan
+    payment_successfully_updated: Pembayaran berhasil diupdate
+    payment_reference_details: Bank Transfer Payment Reference Details
+    transaction_reference_no: Nomer order/referensi
+    submit: Kirim
+  activerecord:
+    models:
+      spree/bank:
+        one: Bank
+        other: Banks
